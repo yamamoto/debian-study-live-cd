@@ -1,0 +1,48 @@
+default 0
+color cyan/blue white/blue
+foreground  = ffffff
+background  = 999999
+splashimage /boot/grub/splash.xpm.gz
+# jp106 keymap
+# setkey doublequote at
+# setkey ampersand caret
+# setkey quote ampersand
+# setkey parenleft asterisk
+# setkey parenright parenleft
+# setkey tilde parenright
+# setkey equal underscore
+# setkey plus colon
+# setkey colon quote
+# setkey asterisk doublequote
+# setkey bracketleft bracketright
+# setkey braceleft braceright
+# setkey bracketright backslash
+# setkey braceright bar
+# setkey backslash equal
+# setkey underscore plus
+# setkey backslash bracketleft
+# setkey bar braceleft
+# setkey F9 equal
+# setkey F10 bracketleft
+# setkey equal k73
+# setkey bracketleft k7d
+
+title		Debian Live
+kernel		/live/vmlinuz-2.6.26-1-686 boot=live union=aufs quiet video=vesa:ywrap,mtrr vga=788 splash locale=ja_JP.UTF-8 keyb=jp kmodel=jp106 swapon persistent
+initrd		/live/initrd.img-2.6.26-1-686
+
+title		Debian Live (US Keyboard)
+kernel		/live/vmlinuz-2.6.26-1-686 boot=live union=aufs quiet video=vesa:ywrap,mtrr vga=788 splash locale=ja_JP.UTF-8 keyb=us swapon persistent
+initrd		/live/initrd.img-2.6.26-1-686
+
+title		Debian Live (noswap/nopersistent)
+kernel		/live/vmlinuz-2.6.26-1-686 boot=live union=aufs quiet video=vesa:ywrap,mtrr vga=788 splash locale=ja_JP.UTF-8 keyb=jp kmodel=jp106 noswap nopersistent
+initrd		/live/initrd.img-2.6.26-1-686
+
+title		Debian Live (US Keyboard/noswap/nopersistent)
+kernel		/live/vmlinuz-2.6.26-1-686 boot=live union=aufs quiet video=vesa:ywrap,mtrr vga=788 splash locale=ja_JP.UTF-8 keyb=us noswap nopersistent
+initrd		/live/initrd.img-2.6.26-1-686
+
+title		Debian Live (fail-safe mode)
+kernel		/live/vmlinuz-2.6.26-1-686 boot=live union=aufs noapic noapm nodma nomce nolapic nosmp vga=normal locale=ja_JP.UTF-8 keyb=jp kmodel=jp106
+initrd		/live/initrd.img-2.6.26-1-686

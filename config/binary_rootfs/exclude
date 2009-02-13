@@ -1,0 +1,6 @@
+var/lib/apt/lists/security.debian.org_dists_lenny_updates_Release.gpg
+var/lib/apt/lists/ftp.jp.debian.org_debian_dists_lenny_Release
+var/lib/apt/lists/ftp.jp.debian.org_debian_dists_lenny_main_binary-i386_Packages
+var/lib/apt/lists/security.debian.org_dists_lenny_updates_main_binary-i386_Packages
+var/lib/apt/lists/ftp.jp.debian.org_debian_dists_lenny_Release.gpg
+var/lib/apt/lists/security.debian.org_dists_lenny_updates_Release
